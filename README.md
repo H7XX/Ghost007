@@ -1,3 +1,5 @@
+<img src="https://github.com/H7XX/Ghost007/raw/master/ghostimagem.png" alt="banner" style="max-width:100%;">
+
 # Ghost007
                                                                                                                 
 Esse script automatiza alguns ataques
