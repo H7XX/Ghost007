@@ -8,6 +8,8 @@ sudo apt-get install figlet curl nmap grep t50 php pip python python2 python3 ai
 
 pip install pynput
 
+chmod +x Ghost007.sh
+
 cd requisitos/
 
 chmod +x *
