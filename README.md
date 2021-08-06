@@ -8,6 +8,8 @@ OBS:só funciona para Kali Linux
 como instalar:
 git clone https://www.github.com/H7XX/Ghost007 
  
+cd Ghost007/
+ 
 chmod +x install.sh
  
 ./install.sh
