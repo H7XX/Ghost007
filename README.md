@@ -2,6 +2,7 @@
 Esse script automatiza varios processos 
 Qualquer erro me avise 
 daqui a pouco adcionarei redes de contato aqui
+ 
 OBS:só funciona para Kali Linux
  
 como instalar:
