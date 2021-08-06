@@ -1,6 +1,8 @@
 # Ghost007
-Esse script automatiza varios processos 
+Esse script automatiza alguns ataques
+ 
 Qualquer erro me avise 
+ 
 daqui a pouco adcionarei redes de contato aqui
  
 OBS:só funciona para Kali Linux
