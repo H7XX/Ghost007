@@ -14,6 +14,10 @@ cd requisitos/
 
 chmod +x *
 
+cd creat-backdoor/
+
+chmod +x back7.sh
+
 clear
 
 figlet Download Complete.
