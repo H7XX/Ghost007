@@ -1,7 +1,7 @@
 # Ghost007
  
 div align="center">
-<img src=https://user-images.githubusercontent.com/88547689/128578621-3911735b-0a66-4bc2-bd47-6dd131273753.png" />
+<img src=https://user-images.githubusercontent.com/88547689/128578621-3911735b-0a66-4bc2-bd47-6dd131273753.png" width="700px" />
 </div>
                                                                                                                 
 Esse script automatiza alguns ataques
