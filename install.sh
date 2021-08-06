@@ -4,7 +4,7 @@ clear
 
 echo "instalando. . ."
 
-sudo apt-get install figlet curl nmap grep t50 php pip python python2 python3 aircrack-ng dirb -y
+sudo apt-get install figlet curl nmap grep t50 php pip python python2 python3 aircrack-ng dirb metasploit-framework -y
 
 pip install pynput
 pip install slowloris
