@@ -1,7 +1,3 @@
-#FB H4D3Z https://www.facebook.com/PherxD
-#CLOWNSEC: https://www.facebook.com/PinoyClownSec2k19Reborn
-
-
 #!/usr/bin/env python3
 import socket
 import os
@@ -40,11 +36,11 @@ o.connect(("8.8.8.8", 80))
 LH = o.getsockname()[0]
 o.close()
 
-userinput = input('%s %s%s%s : Want to use the default LHOST? [Y or N] ' % (que, red, LH, end)).lower()
+userinput = input('%s %s%s%s : Quer usar o LHOST padrão? [Y or N] ' % (que, red, LH, end)).lower()
 if userinput == 'n':
     LH = input('%s SEU LHOST:- ' % que)
 LP = '6969'
-userinput = input('%s %s%s%s : Want to use the default LPORT? [Y or N] ' % (que, red, LP, end)).lower()
+userinput = input('%s %s%s%s : Quer usar o  LPORT padrão? [Y or N] ' % (que, red, LP, end)).lower()
 if userinput == 'n':
     LP = input('%s SUA LPORT:- ' % que)
 print (' ')
