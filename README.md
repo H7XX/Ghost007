@@ -8,9 +8,11 @@ Qualquer erro me avise
  
 daqui a pouco adcionarei redes de contato aqui
  
-OBS:só funciona para Kali Linux
+⚠só funciona para Kali Linux⚠
  
 como instalar:
+ 
+apt-get install git -y
  
 git clone https://github.com/H7XX/Ghost007 
  
