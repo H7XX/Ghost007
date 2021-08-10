@@ -106,7 +106,8 @@ proteção https"
 
 	12)
 		clear
-		update=bash requisitos/atualizar.sh
+		cd requisitos/
+		bash atualizar.sh
 	;;
 
 	*)
