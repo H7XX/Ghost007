@@ -4,12 +4,10 @@ cd ..
 
 rm -rf Ghost007/
 
-git clone https://github.com/H7XX/Ghost007
+git clone https://github.com/H7XX/Update
 
-rm -rf Update/
+cd Update
 
-cd Ghost007/
+chmod +x atualizar.sh
 
-chmod +x install.sh
-
-./install.sh
+./atualizar.sh
