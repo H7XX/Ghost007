@@ -1,9 +1,6 @@
 #!/bin/bash
-#feito por H7X
-#essa ferramenta rastreia endereços de ip publico
 
 figlet ipinfo
-echo "version:1.0"
 
 menu="
 {1} ver seu propio ip
