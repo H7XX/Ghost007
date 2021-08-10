@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ..
+
 rm Ghost007.sh
 rm 1.png
 rm install.sh
