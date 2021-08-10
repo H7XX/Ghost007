@@ -1,15 +1,15 @@
 #!/bin/bash
 
-cd ..
+rm Ghost007.sh
+rm 1.png
+rm install.sh
+rm README.md
+rm -rf requisitos
 
-cd ..
+git clone https://github.com/H7XX/Ghost007
 
-rm -rf Ghost007/
+cd Ghost007/
 
-git clone https://github.com/H7XX/Update
+chmod +x install.sh
 
-cd Update
-
-chmod +x atualizar.sh
-
-./atualizar.sh
+./install.sh
