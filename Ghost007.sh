@@ -2,7 +2,7 @@
 
 clear
 
-cat banner.txt
+cat requisitos/banner.txt
 
 sleep 0.70
 
@@ -106,7 +106,7 @@ proteção https"
 
 	12)
 		clear
-		update=bash atualizar.sh
+		update=bash requisitos/atualizar.sh
 	;;
 
 	*)
