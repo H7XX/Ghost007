@@ -20,7 +20,7 @@ echo "      | | | | | | |"
 echo "V:1.8"
 menu="
 {0} sair do script
-{1} encontrar portas abertas em ip		{7} Ataque Dos
+{1} consultar cep 				{7} Ataque Dos
 {2} Rastrear ip					{8} Derrubar Wifi
 {3} Ativar modo monitor				{9} criar rede wifi fake
 {4} Shell em XSS				{10} Criar backdoor automaticamente
@@ -38,7 +38,8 @@ case "$opcao" in
 	;;
 
 	1)
-		scan=bash requisitos/scanport.sh
+		read -p "Cep que você deseja consultar: " cep
+		curl https://viacep.com.br/ws/$cep/json/
 	;;
 
 
