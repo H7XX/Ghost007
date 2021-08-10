@@ -1,4 +1,4 @@
-<img src="" alt="banner" style="max-width:100%;">
+<img src="https://github.com/H7XX/Ghost007/blob/main/1.png" alt="banner" style="max-width:100%;">
 
 # Ghost007
                                                                                                                 
