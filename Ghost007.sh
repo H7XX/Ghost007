@@ -17,6 +17,7 @@ menu="
 "
 
 echo "By: H7X"
+echo "Versão: 1.9"
 echo "Github: https://github.com/H7XX"
 echo "Youtube: https://www.youtube.com/channel/UCKHc3Id634qWSrZ_vbQKGTQ"
 echo "$menu"
