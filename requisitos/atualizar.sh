@@ -2,11 +2,7 @@
 
 cd ..
 
-rm Ghost007.sh
-rm 1.png
-rm install.sh
-rm README.md
-rm -rf requisitos
+rm -rf Ghost007/
 
 git clone https://github.com/H7XX/Ghost007
 
