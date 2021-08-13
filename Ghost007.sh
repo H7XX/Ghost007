@@ -10,14 +10,14 @@ menu="
 {0} sair do script 				{7} Ataque Dos
 {1} consultar cep				{8} Derrubar Wifi
 {2} Rastrear ip					{9} criar rede wifi fake
-{3} Ativar modo monitor				{10} Criar backdoor automaticamente
-{4} Shell em XSS				{11} arp spoofing
+{3} Brute force em email			{10} Criar backdoor automaticamente
+{4} Shell em XSS				{11} arp spoofing (mitm)
 {5} Descriptografar MD5				{12} Atualizar script
 {6} Spam-Bot
 "
 
 echo "By: H7X"
-echo "Versão: 1.9"
+echo "Versão: 3.9"
 echo "Github: https://github.com/H7XX"
 echo "Youtube: https://www.youtube.com/channel/UCKHc3Id634qWSrZ_vbQKGTQ"
 echo "$menu"
@@ -31,6 +31,7 @@ case "$opcao" in
 	;;
 
 	1)
+		figlet consulta_cep
 		read -p "Cep que você deseja consultar: " cep
 		curl https://viacep.com.br/ws/$cep/json/
 	;;
@@ -41,8 +42,7 @@ case "$opcao" in
 	;;
 
 	3)
-		read -p "Sua interface: " ifacemonitor
-		airmon-ng start $ifacemonitor
+		brute=bash requisitos/brute-gmail.sh
 	;;
 
 	4)
