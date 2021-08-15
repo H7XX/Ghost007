@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/88547689/129069626-abf3308a-df2e-459f-a13d-d239b0aac3fe.png" alt="banner" style="max-width:100%;">
+<img src="https://user-images.githubusercontent.com/88547689/129485928-b3a7bc24-515a-401d-aebd-c5f474d68ebb.png" alt="banner" style="max-width:100%;">
 
 # Ghost007
                                                                                                                 
@@ -10,7 +10,7 @@ daqui a pouco adcionarei redes de contato aqui
  
 ⚠só funciona para Kali Linux⚠
  
-como instalar:
+# Como instalar
  
 apt-get install git -y
  
