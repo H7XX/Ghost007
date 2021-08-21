@@ -1,27 +1,50 @@
 #!/bin/bash
 
+# Cores
+end="\033[m"
+red="\033[1;31m"
+green="\033[1;32m"
+yellow="\033[1;33m"
+blue="\033[1;34m"
+cyan="\033[1;36m"
+white="\033[1;37m"
+purple="\033[1;35m"
+
 clear
 
-cat requisitos/banner.txt
+banner=$(bash requisitos/banner.sh)
 
-sleep 0.70
+echo "$banner"
 
-menu="
-{0} sair do script 				{7} Ataque Dos
-{1} consultar cep				{8} Derrubar Wifi
-{2} Rastrear ip					{9} criar rede wifi fake
-{3} Brute force em email			{10} Criar backdoor automaticamente
-{4} Shell em XSS				{11} arp spoofing (mitm)
-{5} Descriptografar MD5				{12} Atualizar script
-{6} Spam-Bot
-"
+sleep 0.10
 
-echo "By: H7X"
-echo "Versão: 3.9"
-echo "Github: https://github.com/H7XX"
-echo "Youtube: https://www.youtube.com/channel/UCKHc3Id634qWSrZ_vbQKGTQ"
-echo "$menu"
-
+sleep 0.1
+printf "${purple}By: H7X\n"
+sleep 0.1
+printf "Versão: 3.9\n"
+sleep 0.1
+printf "Github: https://github.com/H7XX\n"
+sleep 0.1
+printf "Youtube: https://www.youtube.com/channel/UCKHc3Id634qWSrZ_vbQKGTQ\n ${end}"
+sleep 0.1
+echo " "
+sleep 0.1
+printf "${green}{0} sair do script				{8} Derrubar Wifi\n"
+sleep 0.1
+printf "{1} consultar cep                               {9} criar rede wifi fake\n"
+sleep 0.1
+printf "{2} Rastrear ip                                 {10} Criar backdoor automaticament\n"
+sleep 0.1
+printf "{3} Brute force em email                        {11} arp spoofing (mitm)\n"
+sleep 0.1
+printf "{4} Shell em XSS                                {12} Consultar codigo de banco\n"
+sleep 0.1
+printf "{5} Descriptografar MD5                         {13} Consultar operadora de número\n"
+sleep 0.1
+printf "{6} Spam-Bot					{14} Atualizar script\n"
+sleep 0.1
+printf "{7} Ataque D0S\n"
+echo " "
 read -p "Escolha uma opção >> " opcao
 
 case "$opcao" in
@@ -106,13 +129,26 @@ proteção https"
 	;;
 
 	12)
+		figlet consulta-banco
+		read -p "Digite o codigo do banco:" codigo
+		echo "Resultado:"
+		curl https://brasilapi.com.br/api/banks/v1/$codigo
+	;;
+
+	13)
+		perl requisitos/operadora.pl
+	;;
+
+	14)
 		clear
 		cd requisitos/
 		bash atualizar.sh
 	;;
 
 	*)
-		echo -e "\e[33m[!]Opção invalida"
+		echo -e "${red}[!]Opção invalida${end}"
+		sleep 2
+		bash Ghost007.sh
 	;;
 
 esac
