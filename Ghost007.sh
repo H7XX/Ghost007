@@ -41,9 +41,9 @@ printf "{4} Shell em XSS                                {12} Consultar codigo de
 sleep 0.1
 printf "{5} Descriptografar MD5                         {13} Consultar operadora de número\n"
 sleep 0.1
-printf "{6} Spam-Bot					{14} Atualizar script\n"
+printf "{6} Spam-Bot					{14} Consulta DDD\n"
 sleep 0.1
-printf "{7} Ataque D0S\n"
+printf "{7} Ataque D0S					{15} Atualizar script\n"
 echo " "
 read -p "Escolha uma opção >> " opcao
 
@@ -140,6 +140,14 @@ proteção https"
 	;;
 
 	14)
+		figlet Consulta-DDD
+		read -p "Informe o DDD: " ddd
+		wget https://brasilapi.com.br/api/ddd/v1/$ddd -O ddd.txt
+		sed 's/,/\n  /g' ddd.txt | sed 's/:/: /g' | sed 's/"//g' | sed 's/{/\ \ /' | sed 's/}//' | sed 's/\[//' | sed 's/\]/\n/' | sed 's/state/estado/' | sed 's/cities/cidades/'
+		rm ddd.txt
+	;;
+
+	15)
 		clear
 		cd requisitos/
 		bash atualizar.sh
