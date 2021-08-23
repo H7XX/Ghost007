@@ -34,4 +34,3 @@ para executar:
 # Feito por
  
  href="https://github.com/H7XX"><img style="border-radius: 50%;"
- [**H7X**]("https://github.com/H7X")
