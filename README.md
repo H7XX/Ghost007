@@ -17,15 +17,15 @@ daqui a pouco adcionarei redes de contato aqui
   
 # Como instalar
  
-apt-get install git -y
++ apt-get install git -y
  
-git clone https://github.com/H7XX/Ghost007 
++ git clone https://github.com/H7XX/Ghost007 
  
-cd Ghost007/
++ cd Ghost007/
  
-chmod +x install.sh
++ chmod +x install.sh
  
-./install.sh
++ ./install.sh
  
 para executar:
  
