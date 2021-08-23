@@ -33,4 +33,5 @@ para executar:
  
 # Feito por
  
-<img src="https://avatars.githubusercontent.com/u/88547689?v=4" heigth="30" width alt="H7X" style="max-width:100%;">
+href="https://github.com/H7XX"><img style="border-radius: 50%;"
+[**H7X**]("https://github.com/H7X")
