@@ -27,8 +27,8 @@ daqui a pouco adcionarei redes de contato aqui
  
 + ./install.sh
  
-para executar digite:
- + ./Ghost007.sh
+para executar: 
++ ./Ghost007.sh
  
 # Feito por
  
