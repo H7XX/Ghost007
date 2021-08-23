@@ -14,5 +14,5 @@ chmod +x creat-backdoor/back7.sh
 cd ..
 
 echo "Instalação das requisições completa"
-echo "para executar digite: ./Ghost007"
+echo "para executar digite: ./Ghost007.sh"
 zenity --info --title="Finalizada" --text="Instalação completa clique em ok para continuar"
