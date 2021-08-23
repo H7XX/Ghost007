@@ -9,11 +9,13 @@
 > Status: desenvolvendo de novas atualizações
 
 # 🌀Ghost007🌀
+ 
 <p align="center" ><img alt="Versão: 3.9"                                                                                                   
+
 Esse script automatiza alguns ataques e consultas
- 
+  
 Qualquer erro me avise 
- 
+                         
 daqui a pouco adcionarei redes de contato aqui
  
 # Plataformas 
