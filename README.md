@@ -10,8 +10,8 @@
 
 # 🌀Ghost007🌀
  
-<p align="center" ><img alt="Versão: 3.9"                                                                                                   
-
+<p align="center" Versão: 3.9                                                                                                   
+ 
 Esse script automatiza alguns ataques e consultas
   
 Qualquer erro me avise 
