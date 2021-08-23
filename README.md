@@ -1,6 +1,7 @@
 # Screenshots
  
 <img src="https://user-images.githubusercontent.com/88547689/130337085-d98d4d72-4b42-4efc-8b64-b278270b4afd.png" alt="banner" style="max-width:100%;">
+> Status: Em desenvolvimento de novas atualizações
 
 # Ghost007
                                                                                                                 
