@@ -33,4 +33,4 @@ para executar:
  
 # Feito por
 
-href="https://avatars.githubusercontent.com/u/88547689?v=4"><img style="border-radius: 50%;"
+<td align="center"><a href="https://github.com/H7XX"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88547689?v=4" width="100px;" alt=""/><br /><sub><b>@H7X</b></sub></a><br /></td>
