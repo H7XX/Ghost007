@@ -10,7 +10,7 @@
 
 # 🌀Ghost007🌀
                                                                                                                 
-Esse script automatiza alguns ataques
+Esse script automatiza alguns ataques e consultas
  
 Qualquer erro me avise 
  
