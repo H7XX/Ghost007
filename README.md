@@ -11,9 +11,9 @@ Qualquer erro me avise
 daqui a pouco adcionarei redes de contato aqui
  
 # Plataformas 
-✔️ Kali Linux
+✔️ Kali Linux 
 ❌ Termux app
- 
+  
 # Como instalar
  
 apt-get install git -y
