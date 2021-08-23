@@ -32,5 +32,5 @@ para executar:
 + ./Ghost007.sh
  
 # Feito por
- 
- href="https://github.com/H7XX"><img style="border-radius: 50%;"
+
+href="https://avatars.githubusercontent.com/u/88547689?v=4"><img style="border-radius: 50%;"
