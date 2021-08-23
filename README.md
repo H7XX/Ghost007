@@ -12,6 +12,7 @@ daqui a pouco adcionarei redes de contato aqui
  
 # Plataformas 
 ✔️ Kali Linux 
+ 
 ❌ Termux app
   
 # Como instalar
