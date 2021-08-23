@@ -33,4 +33,4 @@ para executar:
  
 # Feito por
  
-<img src="https://avatars.githubusercontent.com/u/88547689?v=4" alt="banner" style="max-width:10%;">
+<img src="https://avatars.githubusercontent.com/u/88547689?v=4" heigth="30" width alt="H7X" style="max-width:100%;">
