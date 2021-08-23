@@ -10,7 +10,9 @@ Qualquer erro me avise
  
 daqui a pouco adcionarei redes de contato aqui
  
-⚠só funciona para Kali Linux⚠
+# Plataformas 
+✔️ Kali Linux
+❌ Termux app
  
 # Como instalar
  
