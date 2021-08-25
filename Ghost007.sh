@@ -33,7 +33,7 @@ printf "${green}{0} sair do script				{8} Derrubar Wifi\n"
 sleep 0.1
 printf "{1} consultar cep                               {9} criar rede wifi fake\n"
 sleep 0.1
-printf "{2} Rastrear ip                                 {10} Criar backdoor automaticament\n"
+printf "{2} Rastrear ip                                 {10} Criar backdoor automaticamente\n"
 sleep 0.1
 printf "{3} Brute force em email                        {11} arp spoofing (mitm)\n"
 sleep 0.1
