@@ -22,7 +22,7 @@ sleep 0.10
 sleep 0.1
 printf "${purple}Olá $username${end}\n"
 sleep 0.10
-printf "${green}[0] sair do script		          	{10} Criar backdoor automaticament\n"
+printf "$red[0]$end${green} sair do script		          	{10} Criar backdoor automaticamente\n"
 sleep 0.1
 printf "{1} consultar cep                               {11} arp spoofing (mitm)\n"
 sleep 0.1
@@ -36,16 +36,16 @@ printf "{5} Descriptografar MD5                         {15} Consultar dados de 
 sleep 0.1
 printf "{6} Spam-Bot					{16} Atualizar script\n"
 sleep 0.1
-printf "{7} Ataque D0S					{98} Mudar Username\n"
+printf "{7} Ataque D0S					${blue}{98} Mudar Username${end}\n"
 sleep 0.1
-printf "{8} Derrubar wifi 				{99} Creditos && infos \n"
+printf "${green}{8} Derrubar wifi${end} 				${blue}{99} Creditos && infos${end} \n"
 sleep 0.1
-printf "{9} criar rede wifi fake\n"
+printf "${green}{9} criar rede wifi fake\n"
 echo " "
 read -p "Escolha uma opção >> " opcao
 case "$opcao" in
 	0)
-		echo "tchau (^_^)／"
+		echo "tchau ( ^_^)／"
 		exit 1
 	;;
 
@@ -174,9 +174,11 @@ proteção https"
 		printf "Youtube: https://www.youtube.com/channel/UCKHc3Id634qWSrZ_vbQKGTQ \n"
 		printf " \n"
 		printf "script de consultar operadora de número feito por: \n"
+		printf " \n"
 		printf "rafaelmspc \n"
 		printf  "\n"
-		printf "Script de descriptografar mds Feito por: \n"
+		printf "Script de descriptografar MD5 Feito por: \n"
+		printf " \n"
 		printf "barcellosDev \n"
 		printf "${end}"
 	;;
