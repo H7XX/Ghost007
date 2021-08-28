@@ -4,12 +4,14 @@
  
 # Screenshots 📸
  
-<img src="https://user-images.githubusercontent.com/88547689/130337085-d98d4d72-4b42-4efc-8b64-b278270b4afd.png" alt="banner" style="max-width:100%;">
+<img src="https://user-images.githubusercontent.com/88547689/131224944-3ddf2369-4b83-4819-83b1-2719c0549091.png" alt="banner" style="max-width:100%;">
  
 > Status: desenvolvendo de novas atualizações
 
 # 🌀Ghost007🌀
-
+ 
+> Versão 4.0
+ 
 Esse script automatiza alguns ataques e consultas
  
 Qualquer erro me avise 
