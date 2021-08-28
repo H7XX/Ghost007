@@ -12,6 +12,7 @@ purple="\033[1;35m"
 
 clear
 
+username=$(cat requisitos/username.txt)
 banner=$(bash requisitos/banner.sh)
 
 echo "$banner"
@@ -19,34 +20,29 @@ echo "$banner"
 sleep 0.10
 
 sleep 0.1
-printf "${purple}By: H7X\n"
+printf "${purple}Olá $username${end}\n"
+sleep 0.10
+printf "${green}[0] sair do script		          	{10} Criar backdoor automaticament\n"
 sleep 0.1
-printf "Versão: 3.9\n"
+printf "{1} consultar cep                               {11} arp spoofing (mitm)\n"
 sleep 0.1
-printf "Github: https://github.com/H7XX\n"
+printf "{2} Rastrear ip                                 {12} Consultar codigo de banco\n"
 sleep 0.1
-printf "Youtube: https://www.youtube.com/channel/UCKHc3Id634qWSrZ_vbQKGTQ\n ${end}"
+printf "{3} Brute force em email                        {13} Consultar operadora de número\n"
 sleep 0.1
-echo " "
+printf "{4} Shell em XSS                                {14} Consulta DDD\n"
 sleep 0.1
-printf "${green}{0} sair do script				{8} Derrubar Wifi\n"
+printf "{5} Descriptografar MD5                         {15} Consultar dados de CPF\n"
 sleep 0.1
-printf "{1} consultar cep                               {9} criar rede wifi fake\n"
+printf "{6} Spam-Bot					{16} Atualizar script\n"
 sleep 0.1
-printf "{2} Rastrear ip                                 {10} Criar backdoor automaticamente\n"
+printf "{7} Ataque D0S					{98} Mudar Username\n"
 sleep 0.1
-printf "{3} Brute force em email                        {11} arp spoofing (mitm)\n"
+printf "{8} Derrubar wifi 				{99} Creditos && infos \n"
 sleep 0.1
-printf "{4} Shell em XSS                                {12} Consultar codigo de banco\n"
-sleep 0.1
-printf "{5} Descriptografar MD5                         {13} Consultar operadora de número\n"
-sleep 0.1
-printf "{6} Spam-Bot					{14} Consulta DDD\n"
-sleep 0.1
-printf "{7} Ataque D0S					{15} Atualizar script\n"
+printf "{9} criar rede wifi fake\n"
 echo " "
 read -p "Escolha uma opção >> " opcao
-
 case "$opcao" in
 	0)
 		echo "tchau (^_^)／"
@@ -148,9 +144,41 @@ proteção https"
 	;;
 
 	15)
+		cat requisitos/banner-cpf.txt
+		echo "exemplo: 10345675917"
+		read -p "Digite o cpf: " cpf
+		curl https://netinmakerapi.000webhostapp.com/KINY-GAY/CONSULTA%20CPF%20SIMPLES/api.php?cpf=$cpf
+	;;
+
+	16)
 		clear
 		cd requisitos/
 		bash atualizar.sh
+	;;
+
+	98)
+		read -p "Seu Username: " user
+		rm requisitos/username.txt
+		touch requisitos/username.txt
+		printf "$user" >> requisitos/username.txt
+		printf "${blue}[!]Username alterado com sucesso\n${end}"
+		sleep 2
+		bash Ghost007.sh
+	;;
+
+	99)
+		figlet -c Creditos
+		printf "${purple}By: H7X \n"
+		printf "Versão: 4.0 \n"
+		printf "Github: https://github.com/H7XX \n"
+		printf "Youtube: https://www.youtube.com/channel/UCKHc3Id634qWSrZ_vbQKGTQ \n"
+		printf " \n"
+		printf "script de consultar operadora de número feito por: \n"
+		printf "rafaelmspc \n"
+		printf  "\n"
+		printf "Script de descriptografar mds Feito por: \n"
+		printf "barcellosDev \n"
+		printf "${end}"
 	;;
 
 	*)
