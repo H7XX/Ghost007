@@ -7,7 +7,7 @@ use v5.10;
 use warnings;
 use strict;
  
-my ($num,$ua,$resp,$cont,$cdgvl,$cod,%tcod);
+my ($service,$num,$ua,$resp,$cont,$cdgvl,$cod,%tcod);
  
  printf "
 	       `--              --`                                        
@@ -25,9 +25,17 @@ my ($num,$ua,$resp,$cont,$cdgvl,$cod,%tcod);
                `ds    :NMMN:    sd`                                        
                 .s+``.yMMMMy.``+s.                                         
                   -+shNMMMMNhs+-            
-      H7X ";
+        Criado por: rafaelmspc
+	Modificado por: ♤H7X♤ \n";
  
+printf "-\n"x0;
+printf "[!] Cada servidor possibilita apenas seis consultas ip/dia \n
+{1} Servidor 1 
+{2} Servidor 2
+{3} Servidor 3\n";
+$service = <STDIN> ; chomp($service);
 printf "-"x30;
+printf "\n";
 printf "\nQual o nº do telefone com DDD 
 Ex: 2199875140\n";
 $num = <STDIN> ; chomp($num);
@@ -56,7 +64,7 @@ for (1..3){
 	$ua = LWP::UserAgent->new();
 	$ua-> agent("Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4");  
 	$ua->timeout( 15 );
-	$resp = $ua->get("http://consultanumero$_.telein.com.br/sistema/consulta_numero.php?chave=senhasite&numero=$num");
+	$resp = $ua->get("http://consultanumero$service.telein.com.br/sistema/consulta_numero.php?chave=senhasite&numero=$num");
 	$cod = substr($resp->decoded_content, 0,2);
 		if ($cod =~ m/\d/){
 			printf "[+] Numero:$num\t$tcod{$cod}\n";
