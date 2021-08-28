@@ -22,7 +22,7 @@ sleep 0.10
 sleep 0.1
 printf "${purple}Olá $username\n"
 sleep 0.10
-printf "$red[0]$end${green} sair do script		          	{10} Criar backdoor automaticamente\n"
+printf "${green}{0} sair do script		          	{10} Criar backdoor automaticamente\n"
 sleep 0.1
 printf "{1} consultar cep                               {11} arp spoofing (mitm)\n"
 sleep 0.1
