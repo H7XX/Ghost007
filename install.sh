@@ -5,7 +5,6 @@ echo "instalando. . ."
 sudo apt-get install figlet curl nmap grep t50 php pip python python2 python3 aircrack-ng zenity hydra perl -y
 
 pip install pynput
-pip install slowloris
 
 chmod +x Ghost007.sh
 cd requisitos/
