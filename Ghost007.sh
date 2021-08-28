@@ -36,11 +36,11 @@ printf "{5} Descriptografar MD5                         {15} Consultar dados de 
 sleep 0.1
 printf "{6} Spam-Bot					{16} Atualizar script\n"
 sleep 0.1
-printf "{7} Ataque D0S					${blue}{98} Mudar Username${end}\n"
+printf "{7} Ataque D0S					{98} Mudar Username\n"
 sleep 0.1
-printf "${green}{8} Derrubar wifi${end} 				${blue}{99} Creditos && infos${end} \n"
+printf "{8} Derrubar wifi 				{99} Creditos && infos \n"
 sleep 0.1
-printf "${green}{9} criar rede wifi fake\n"
+printf "{9} criar rede wifi fake\n"
 echo " "
 read -p "Escolha uma opção >> " opcao
 case "$opcao" in
