@@ -4,7 +4,7 @@
  
 # Screenshots 📸
  
-<img src="https://user-images.githubusercontent.com/88547689/131224944-3ddf2369-4b83-4819-83b1-2719c0549091.png" alt="banner" style="max-width:100%;">
+<img src="https://user-images.githubusercontent.com/88547689/131233096-20f90141-8c54-45ab-a875-90335cc632e1.png" alt="banner" style="max-width:100%;">
  
 > Status: desenvolvendo de novas atualizações
 
