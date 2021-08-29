@@ -144,7 +144,7 @@ proteção https"
 	;;
 
 	15)
-		cat requisitos/banner-cpf.txt
+		figlet consulta-cpf
 		echo "exemplo: 10345675917"
 		read -p "Digite o cpf: " cpf
 		curl https://netinmakerapi.000webhostapp.com/KINY-GAY/CONSULTA%20CPF%20SIMPLES/api.php?cpf=$cpf
