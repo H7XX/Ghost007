@@ -86,7 +86,7 @@ case "$opcao" in
 	;;
 
 	7)
-		DOS=bash requisitos/DosConfig.sh
+		T50=t50config.sh
 	;;
 
 	8)
