@@ -86,7 +86,7 @@ case "$opcao" in
 	;;
 
 	7)
-		T50=t50config.sh
+		bash requisitos/t50config.sh
 	;;
 
 	8)
