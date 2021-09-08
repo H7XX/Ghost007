@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Atualizando..."
+
 cd ..
 
 cd ..
