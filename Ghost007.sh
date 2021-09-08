@@ -34,7 +34,7 @@ printf "{4} Shell em XSS                                {14} Consulta DDD\n"
 sleep 0.1
 printf "{5} Descriptografar MD5                         {15} Consultar dados de CPF\n"
 sleep 0.1
-printf "{6} Spam-Bot					{16} Atualizar script\n"
+printf "{6} Spam-Bot					{97} Atualizar script\n"
 sleep 0.1
 printf "{7} Ataque D0S					{98} Mudar Username\n"
 sleep 0.1
@@ -103,7 +103,8 @@ case "$opcao" in
 
 	10)
 		cd requisitos/creat-backdoor
-		./back7.sh
+		bash back.sh
+		cd ..
 	;;
 
 	11)
@@ -116,7 +117,7 @@ proteção https"
 		read -p "Digite sua interface: " arpiface
 		read -p "Digite o ip do alvo: " iparp
 		clear
-		cat requisitos/creat-backdoor/cat-ascii
+		cat requisitos/cat-ascii
 		echo " "
 		sleep 0.70
 		echo "Iniciando ataque..."
@@ -150,7 +151,7 @@ proteção https"
 		curl https://netinmakerapi.000webhostapp.com/KINY-GAY/CONSULTA%20CPF%20SIMPLES/api.php?cpf=$cpf
 	;;
 
-	16)
+	97)
 		clear
 		cd requisitos/
 		bash atualizar.sh
