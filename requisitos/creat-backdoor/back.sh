@@ -121,7 +121,5 @@ case "$opcao" in
 	*)
 		printf "${red}[!]Opção invalida${end}"
 	;;
-
-
-
+	
 esac
