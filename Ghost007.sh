@@ -162,7 +162,7 @@ proteção https"
 		rm requisitos/username.txt
 		touch requisitos/username.txt
 		printf "$user" >> requisitos/username.txt
-		printf "${blue}[i]Username alterado com sucesso\n${end}"
+		printf "${blue}[i] Username alterado com sucesso\n${end}"
 		sleep 2
 		bash Ghost007.sh
 	;;
