@@ -2,7 +2,7 @@
 
 chmod +x creat-backdoor/back.sh
 
-echo "Vc ja tem o metasploit instalado?"
+echo "Você ja tem o metasploit instalado?"
 read -p "s/n >> " p1
 case "$p1" in
 	s)
