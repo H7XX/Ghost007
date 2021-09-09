@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm index.html
+rm index.html > /dev/null
 
 clear
 
@@ -33,7 +33,7 @@ case "$escolha" in
 	;;
 
 	0)
-		echo "(^_^)/ tchau"
+		echo "( ^_^)/ tchau"
 		exit 1
 	;;
 
