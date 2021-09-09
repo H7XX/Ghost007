@@ -49,7 +49,6 @@ case "$opcao" in
 
 	1)
 		echo "em desenvolvimento"
-		bash back.sh
 	;;
 
 	2)
@@ -121,6 +120,7 @@ case "$opcao" in
 
 	*)
 		printf "${red}[!]Opção invalida${end} \n"
+		sleep 1
 		bash back.sh
 	;;
 	
