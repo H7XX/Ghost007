@@ -185,7 +185,7 @@ proteção https"
 	;;
 
 	*)
-		echo -e "${red}[!]Opção invalida${end}"
+		echo -e "${red}[!] Opção invalida${end}"
 		sleep 2
 		bash Ghost007.sh
 	;;
