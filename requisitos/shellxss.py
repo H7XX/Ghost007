@@ -25,7 +25,7 @@ import time
 # Banner
 
 os.system("clear")
-os.system('cat requisitos/banner.txt')
+os.system('cat requisitos/bns.txt')
 
 # Funcionamento
 
