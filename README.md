@@ -6,7 +6,7 @@
  
 <img src="https://user-images.githubusercontent.com/88547689/132551307-74f3a298-91e3-4ecf-aed1-31264791bfa9.png" alt="banner" style="max-width:100%;">
  
-> Status: desenvolvendo de novas atualizações
+> Status: off
 
 # 🌀Ghost007🌀
  
